@@ -11,7 +11,7 @@ def main():
         close_game_function()
         gameDisplay.fill((255, 255, 255))
 
-
+        #Body
 
         clock.tick(60)
         pygame.display.update()
