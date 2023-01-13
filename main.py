@@ -12,11 +12,13 @@ def main():
 
     while True:
         close_game_function()
-        gameDisplay.fill((255, 255, 255)
+        gameDisplay.fill((255, 255, 255))
                          
         #Dibujare todo lo que se valla ah dibujar aqui
-	 
-						
+	for i in todo_para_dibujar:
+		x,y = i.posicion
+		gameDisplay.blit(i.image, (x, y))
+							
         clock.tick(60)
         pygame.display.update()
 
