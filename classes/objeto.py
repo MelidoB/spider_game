@@ -9,6 +9,8 @@ class Modulo_De_Objeto:
         self.cantidad_de_vida = capacidad
         self.capacidad_de_vida = capacidad
 
+    def cambiar_nombre(self, nuevo_nombre):
+        self.nombre = nuevo_nombre
     def cambiar_cantidad_de_vida(self, valor):
         self.cantidad_de_vida = valor
     def cambiar_capacidad_de_vida(self, valor):
