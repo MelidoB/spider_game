@@ -1,13 +1,13 @@
 from pygame import image
 
 class Modulo_De_Objeto:
-    def __init__(self, nombre,posicion,capacidad):
-        self.nombre = nombre
-        self.posicion = posicion
+    def __init__(self):
+        self.nombre = None
+        self.posicion = None
         self.imagen = None
         self.obstaculo = False
-        self.cantidad_de_vida = capacidad
-        self.capacidad_de_vida = capacidad
+        self.cantidad_de_vida = None
+        self.capacidad_de_vida = None
 
     def cambiar_nombre(self, nuevo_nombre):
         self.nombre = nuevo_nombre
@@ -25,7 +25,7 @@ class Modulo_De_Objeto:
     def obtener_posicion(self):
         return self.posicion
     def cambiar_imagen(self, img):
-        self.imagen = image.load(f'Images/{img}')
+        self.imagen = image.load(f'imagenes/{img}')
     def obtener_ancho(self):
         return self.imagen.get_width()
     def obtener_largo(self):
