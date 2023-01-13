@@ -5,6 +5,12 @@ from close_game import close_game_function
 def main():
     #Pasare todo lo que se valla ah dibujar aqui
     todo_para_dibujar = []
+	
+	#Lo primero que voy a dibujar es el personaje
+	personaje = Modulo_De_Personaje()
+	
+	
+	
     
     pygame.init()
     gameDisplay = pygame.display.set_mode((1400, 800))
@@ -12,10 +18,12 @@ def main():
 
     while True:
         close_game_function()
-        gameDisplay.fill((255, 255, 255))
+        gameDisplay.fill((255, 255, 255)) #Dibujare la negro en toda la pantalla
                          
-        #Dibujare todo lo que se valla ah dibujar aqui
-	 
+        #Dibujare sobre el negro todo lo que se valla ah dibujar aqui
+	for i in todo_para_dibujar:
+		x,y = self.obtener_posicion()
+		gameDisplay.blit(i.imagen, (x, y))
 						
         clock.tick(60)
         pygame.display.update()
