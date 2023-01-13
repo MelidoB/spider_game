@@ -20,6 +20,8 @@ class Modulo_De_Objeto:
         self.obstaculo = True
     def cambiar_posicion(self,posicion):
         self.posicion = posicion
+    def obtener_posicion(self):
+        return self.posicion
     def cambiar_imagen(self, img):
         self.imagen = image.load(f'Images/{img}')
     def obtener_ancho(self):
